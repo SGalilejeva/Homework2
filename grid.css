@@ -1,18 +1,25 @@
+body, html {
+  margin: 20px;
+  height: 100%;
+  font-family: Work Sans, Helvetica, sans-serif;
+  line-height: 24px;
+  font-size: 15px;
+  background-color: rgb(159, 81, 223);
+}
 
 .grid-item {
   height: auto;
 }
-
-.grid-item1 {grid-area: a; background:LightSkyBlue;}
-.grid-item2 {grid-area: b; background:PaleTurquoise;}
-.grid-item3 {grid-area: c; background:LightSkyBlue;}
-.grid-item4 {grid-area: d; background:PaleTurquoise;}
-.grid-item5 {grid-area: e; background:LightSkyBlue;}
-.grid-item6 {grid-area: f; background:PaleGreen;}
-.grid-item7 {grid-area: g; background:LightSkyBlue;}
-.grid-item8 {grid-area: h; background:PaleTurquoise;}
-.grid-item9 {grid-area: j; background:LightSkyBlue;}
-.grid-item10 {grid-area: k; background:PaleTurquoise;}
+.grid-item1 {grid-area: a; background:rgb(248, 249, 250);}
+.grid-item2 {grid-area: b; background:rgb(248, 249, 250);}
+.grid-item3 {grid-area: c; background:rgb(248, 249, 250);}
+.grid-item4 {grid-area: d; background:rgb(248, 249, 250);}
+.grid-item5 {grid-area: e; background:rgb(248, 249, 250);}
+.grid-item6 {grid-area: f; background:rgb(248, 249, 250);}
+.grid-item7 {grid-area: g; background:rgb(248, 249, 250);}
+.grid-item8 {grid-area: h; background:rgb(248, 249, 250);}
+.grid-item9 {grid-area: j; background:rgb(248, 249, 250);}
+.grid-item10 {grid-area: k; background:rgb(248, 249, 250);}
 
 
 
@@ -24,20 +31,45 @@
   'g g g h h h h h h j j j'
   'k k k k k k k k k k k k';
   grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+  
+
   grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 1 / 7;
 }
 
 .grid-container > div {
-  text-align: center;
-  padding: 20px 0;
+  text-align: left;
+  padding: 30px 0;
   font-size: 30px;
 }
 
 @media screen and (min-width: 992px) {
   body {
-    background:PaleTurquoise;;
+    background:rgb(154, 187, 207);:PaleTurquoise;;
   }
 }
+
+
+@media screen and (min-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a a b b b b b b b c c c'
+    'd d d d d d d d d d d d'
+    'e e e e e e e e e e e e'
+    'g g g g g g g g g f f f'
+    'h h h h h h h h h h h h'
+    'h h h h h h h h h h h h'
+    'j j j j j j j j j j j j'
+    'k k k k k k k k k k k k';
+    grid-gap: 10px;
+    background-color: transparent;
+    padding: 10px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 1 / 7;
+  }
+}
+
+
+
 
