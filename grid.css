@@ -23,6 +23,11 @@ header button {
 
 /* Main Section */
 
+.img {
+  display: inline-flex;
+  justify-self: center;
+}
+
 .wrapper {
   display: flex;
 }
