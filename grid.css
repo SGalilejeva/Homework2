@@ -1,10 +1,73 @@
-body, html {
-  margin: 20px;
-  height: 100%;
-  font-family: Work Sans, Helvetica, sans-serif;
-  line-height: 24px;
-  font-size: 15px;
-  background-color: rgb(159, 81, 223);
+header nav ul {
+  display: flex;
+  align-items: baseline;
+  list-style-type: none;
+}
+
+header nav li {
+  margin-right: 15px;
+}
+
+header button {
+  border: none;
+  padding: 8px 25px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  
+}
+
+/* Main Section */
+
+.wrapper {
+  display: flex;
+}
+
+.main {
+  flex: 3;
+}
+
+.main h2 {
+  font-size: 32px;
+  margin: 1rem 0;
+  color: #50c6db;
+}
+
+.main p {
+  font-size: 1rem;
+  margin-bottom: .75rem;
+}
+
+.main img {
+  width: 75%;
+  margin-right: 1rem;
+}
+
+/* Sidebar */
+
+.sidebar {
+  padding: 20px;
+  flex: 1;
+  margin-right: 60px;
+ 
+  background-color: #f9f9f9;
+}
+
+.sidebar ul {
+list-style-type: none;
+margin-top: 1rem;
+font-size: .75rem;
+}
+
+.sidebar ul > li {
+  padding: .25rem 0;
+}
+
+.logo {
+font-size: 2rem;
+margin-right: 1.5rem;
+color: #50c6db;
 }
 
 .grid-item {
@@ -40,7 +103,7 @@ body, html {
 .grid-container > div {
   text-align: left;
   padding: 30px 0;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 @media screen and (min-width: 992px) {
@@ -70,6 +133,33 @@ body, html {
   }
 }
 
+@media (max-width: 570px) {
+  .wrapper {
+      flex-direction: column;
+  }
+
+  .main {
+      margin-right: 0;
+      margin-bottom: 60px;
+  }
+.container-grid {
+  grid-template-areas: 
+  'a a'
+  'b c'
+  'e e'
+  'g g'
+  'f f'
+  'h h'
+  'k k';
+  grid-gap: 20px;
+  padding: 10px;
+  grid-template-columns: repeat (2,1fr);
+}
+.item4, .item9 {
+  display: none;
+}
+
+}
 
 
 
